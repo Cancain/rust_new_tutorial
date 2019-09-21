@@ -1,25 +1,30 @@
+//use std::mem;
+
 fn main() {
-    //i8, u8, i16, u16, i32, u32, i64, u64, isize, usize
-    // let mut x: u32 = 5;
-    // x = 5;
+    // let t = (1, 'a', false);
+    // let f = (2, t);
+    // let ff = (2, (1, 'a', false)); //same thing as above
+    // println!("{} {} {}", t.0, t.1, t.2);
+    // println!("{:#?}", ff); 
+    // let t = (1,2,3,4,5,6,7,8,9,10,11,12,13,14);
+
+    // println!("{:?}", t);
     
-    let a = 1 + 20;
+    // let xs: [i32; 5] = [4,5,6,7,8];
+    // println!("{} {} {}", xs[0], xs.len(), mem::size_of_val(&xs))
+    // let ys = &xs[2..4];
+    // println!("{} {}", ys[0], ys[1]);
 
-    let s = 30 - 20;
-    let m = 5 * 10;
-    let d = 4/6; 
-    let r = 49 % 2;
+    // println!("{:?} {:?}", ys, xs);
+    
+    // let s = "String".to_string();
+    // let ss = String::from("String");
 
-    //bool: true/false
-    let c = 'c';
-    let c: char = 'z';
+    // let slice = &ss[2..4];
+    // println!("{}", slice);
 
-    //tuples
-    let t : (i32, f64, char) = (42, 6.12, 'j');
-    let (z, y, x) = t;
-    let (_, _ , x) = t;
-
-    println!("{} {} {}", t.0, t.1, t.2);
-    let ab = [1,2,3,4,5,6,7,8];
-    let ab1 = ab[0];
+    let h = String::from("Hello, ");
+    let w = String::from("World!");
+    let s = h + &w;
+    println!("{}", s);
 }
